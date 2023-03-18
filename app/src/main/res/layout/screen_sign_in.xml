@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_bank"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/loginName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_your_account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/nameApp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintTop_toBottomOf="@id/loginName"
+        android:hint="@string/phone"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#000"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/Password"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintTop_toBottomOf="@id/Phone"
+        android:hint="@string/password"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#000"
+        android:padding="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SignIn"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:background="@drawable/background_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create have an account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+    <TextView
+        android:id="@+id/SignUpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        app:layout_constraintLeft_toRightOf="@id/create"
+        app:layout_constraintBottom_toBottomOf="@id/create"
+        app:layout_constraintTop_toTopOf="@id/create"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#3F51B5"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

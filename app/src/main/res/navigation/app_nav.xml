@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash"
+        >
+        <action
+            android:id="@+id/action_splashScreen_to_signInScreen"
+            app:destination="@id/signInScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.SignInScreen"
+        android:label="SignInScreen"
+        tools:layout="@layout/screen_sign_in"
+        >
+        <action
+            android:id="@+id/action_signInScreen_to_signUpScreen"
+            app:destination="@id/signUpScreen"
+            app:popUpTo="@id/signInScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signInScreen_to_signInVerify"
+            app:destination="@id/signInVerify" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.SignUpScreen"
+        android:label="SignUpScreen"
+        tools:layout="@layout/screen_sign_up"
+        >
+        <action
+            android:id="@+id/action_signUpScreen_to_signUpVerify"
+            app:destination="@id/signUpVerify" />
+        <action
+            android:id="@+id/action_signUpScreen_to_signInScreen"
+            app:destination="@id/signInScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInVerify"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.SignInVerify"
+        android:label="SignInVerify"
+        tools:layout="@layout/screen_verify_sign_in"
+        >
+        <action
+            android:id="@+id/action_signInVerify_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpVerify"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.SignUpVerify"
+        android:label="SignUpVerify"
+        tools:layout="@layout/screen_verify_sign_up"
+        >
+        <action
+            android:id="@+id/action_signUpVerify_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.mirzabek.example.mobilebank.presenter.ui.screen.MainScreen"
+        android:label="MainScreen"
+        tools:layout="@layout/screen_main"
+        />
+</navigation>

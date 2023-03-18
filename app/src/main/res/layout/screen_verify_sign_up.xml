@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.chaos.view.PinView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:id="@+id/firstPinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:inputType="text"
+        android:itemBackground="@drawable/background_pinn"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="68dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="4dp"
+        app:itemWidth="58dp"
+        app:lineColor="@color/white"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifyBtn"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_margin="20dp"
+        android:background="#2196F3"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

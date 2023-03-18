@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mobile bank</string>
+    <string name="create_have_an_account">create have an account</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="mobile_bank">Mobile Bank</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup">Sign Up</string>
+    <string name="born_data">Born Data</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="enter">Enter</string>
+</resources>
